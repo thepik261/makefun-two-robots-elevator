@@ -8,8 +8,18 @@ Entrants write one funny line of awkward small talk a robot says to another in a
 
 ## Run it
 
+Node 18+ (stdlib only, no dependencies to install):
+
 ```sh
 node main.ts
+```
+
+That writes the entry line to `/output/entry.txt` and reads it back to
+verify the write. To write somewhere else instead, set `OUTPUT_DIR`:
+
+```sh
+OUTPUT_DIR=/tmp/out node main.ts
+cat /tmp/out/entry.txt
 ```
 
 ---
